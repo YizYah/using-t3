@@ -34,8 +34,10 @@ I may have enhanced a few steps or modified them.
 
 ## Add a Real Database
 
-1. go to [PlanetScale](https://planetscale.com/) and set up a db there. Unfortunately, you will need to put in a CC to use them. You are allowed one free project per card.
+1. go to [PlanetScale](https://planetscale.com/) and set up a db there. Unfortunately, you will need to put in a CC to use them. You are allowed one free project per card. There are other alternatives, such as supabase.
 2. create a prisma database url, and then paste into your `.env` file replacing `DATABASE_URL`. Remove the old `DATABASE_URL` from Vercel and paste in the new.
+3. go to prisma/schema.prisma and update whatever you want.
+4. run `pnpm run db:push` and it will push your changes to your real db 
 
 ## Add Auth
 
